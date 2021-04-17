@@ -11,6 +11,5 @@ fi
 alias gp='git push -u origin HEAD'
 
 alias k="kubectl"
-source <(kubectl completion bash)
 
 cowsay "Let's get mooo'ving"
