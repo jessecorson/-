@@ -1,6 +1,9 @@
+LEFT=${LEFT:-hello}
+RIGHT=${RIGHT:-world}
+WELCOME=${WELCOME:-"${RIGHT} ${LEFT}"}
+
 export GOPATH=$HOME/workspace:$HOME/go
 export GOBIN=$HOME/go/bin
-
 export PATH="$PATH:$GOBIN"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -13,4 +16,5 @@ alias gp='git push -u origin HEAD'
 
 alias k="kubectl"
 
-cowsay "Let's get mooo'ving"
+cowsay "${WELCOME}"
+. "$HOME/.cargo/env"
