@@ -1,6 +1,6 @@
 LEFT=${LEFT:-hello}
 RIGHT=${RIGHT:-world}
-WELCOME=${WELCOME:-"${RIGHT} ${LEFT}"}
+WELCOME=${WELCOME:-"${LEFT} ${RIGHT}"}
 
 export GOPATH=$HOME/workspace:$HOME/go
 export GOBIN=$HOME/go/bin
