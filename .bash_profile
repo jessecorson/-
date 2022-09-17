@@ -1,3 +1,18 @@
+#!/bin/bash
+# variables
+# TODO: move them up here
+ANIMAL=dog
+
+# functions / compiling inline
+## fix it when i need it
+func doit() {
+  # TODO: say things
+}
+
+# doing it
+sudo doit
+
+# the other stuff
 LEFT=${LEFT:-hello}
 RIGHT=${RIGHT:-world}
 WELCOME=${WELCOME:-"${LEFT} ${RIGHT}"}
@@ -16,5 +31,6 @@ alias gp='git push -u origin HEAD'
 
 alias k="kubectl"
 
-cowsay "${WELCOME}"
+${ANIMAL}say "${WELCOME}"
 . "$HOME/.cargo/env"
+
